@@ -236,7 +236,7 @@ def sync_now():
     data = [{"patient_id": r["patient_id"]} for r in rows]
 
     try:
-        res = requests.post("https://your-render.onrender.com/sync_queue", json=data)
+        res = requests.post("https://doctor-dashboard-kp3y.onrender.com/sync_queue", json=data)
         return "SYNC SUCCESS"
     except:
         return "SYNC FAILED"
